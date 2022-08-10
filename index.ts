@@ -23,9 +23,11 @@ const DISCORD_WEBHOOK_URL = process.env.DISCORD_WEBHOOK_URL;
 /**
  * 各種定数
  */
+const APP_NAME = "nhnotifier" as const;
+const APP_VERSION = "1.0.0" as const;
 const NICEHASH_API_HOST = "https://api2.nicehash.com" as const;
 const USER_AGENT =
-  `nhnotifier (+https://github.com/iamtakagi/nhnotifier)` as const;
+  `${APP_NAME}/${APP_VERSION} (+https://github.com/iamtakagi/nhnotifier)` as const;
 const DISCORD_WEBHOOK_USERNAME = "NiceHash QuickMiner" as const;
 
 declare module NicehashRigs {
